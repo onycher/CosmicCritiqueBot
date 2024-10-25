@@ -1,0 +1,28 @@
+[project]
+name = "cosmiccritiquebot"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Sebastian Onycher", email = "onycher@gmail.com" }
+]
+dependencies = [
+    "pelican>=4.10.1",
+    "ghp-import>=2.1.0",
+    "markdown>=3.7",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cosmiccritiquebot"]
